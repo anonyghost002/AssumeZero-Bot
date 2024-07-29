@@ -1,0 +1,10 @@
+modules = ["nodejs-20", "bash"]
+compile = "make"
+run = "Run"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+build = ["sh", "-c", "make"]
+run = ["sh", "-c", "Run"]
